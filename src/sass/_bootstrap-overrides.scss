@@ -1,0 +1,41 @@
+
+// Sobrescritas específicas do Bootstrap após sua importação
+
+// Customizações de botões
+.btn {
+  border-radius: $border-radius;
+  font-weight: 600;
+  transition: $transition-base;
+  
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+// Customizações de cards
+.card {
+  border-radius: $border-radius-lg;
+  box-shadow: $box-shadow-sm;
+  transition: $transition-base;
+  
+  &:hover {
+    box-shadow: $box-shadow;
+    transform: translateY(-3px);
+  }
+}
+
+// Customizações de navegação
+.navbar {
+  box-shadow: $box-shadow-sm;
+}
+
+// Customizações de formulários
+.form-control {
+  border-radius: $border-radius;
+  border: 2px solid #e9ecef;
+  
+  &:focus {
+    border-color: $primary;
+    box-shadow: 0 0 0 0.2rem rgba($primary, 0.25);
+  }
+}

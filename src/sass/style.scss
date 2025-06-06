@@ -1,0 +1,33 @@
+
+// Arquivo principal Sass - ordem de importação é crucial
+
+// 1. Importar variáveis customizadas ANTES do Bootstrap
+@import 'variables';
+
+// 2. Importar Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+// 3. Importar sobrescritas do Bootstrap
+@import 'bootstrap-overrides';
+
+// 4. Importar base e utilitários
+@import 'base';
+@import 'utilities/icons';
+@import 'utilities/badges';
+@import 'utilities/helpers';
+@import 'utilities/animations';
+
+// 5. Importar componentes
+@import 'components/header';
+@import 'components/cards';
+@import 'components/services';
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/lists';
+@import 'components/sections';
+@import 'components/service-explanation';
+
+// 6. Importar layout
+@import './layout/info';
+@import './layout/footer';
+@import './layout/resposive';

@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeitura em Foco - Serviços Públicos Online</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- CSS principal compilado -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-main">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-info">
+                    <div class="header-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="header-text">
+                        <h1>Portal de Serviços</h1>
+                        <p>Prefeitura Municipal</p>
+                    </div>
+                </div>
+                <div class="header-time">
+                    <div class="time-display">
+                        <i class="fas fa-clock"></i>
+                        <span id="current-time">00:00</span>
+                    </div>
+                    <p id="current-date">Carregando...</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Instruções principais -->
+    <div class="instruction-text">
+        <div class="container">
+            <i class="fas fa-hand-pointer icon"></i>
+            <div class="title">Como usar este totem</div>
+            <p>Toque no serviço que você deseja acessar. A navegação é simples e intuitiva. Se precisar de ajuda, chame um atendente.</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Serviços Populares -->
+            <section class="services-section">
+                <div class="section-header">
+                    <h2 class="extra-large-text">Serviços Mais Procurados</h2>
+                    <p class="large-text">Toque no serviço que você precisa para começar</p>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <a href="service-detail.html?id=1" class="card service-card popular-card h-100 text-decoration-none">
+                            <div class="card-body d-flex flex-column align-items-center text-center p-4">
+                                <div class="service-icon icon-blue mb-3" style="width: 80px; height: 80px; font-size: 2.5rem;">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <h3 class="card-title large-text mb-3">Agendamento de Consultas</h3>
+                                <p class="card-text flex-grow-1">Marque suas consultas médicas de forma rápida e fácil através do sistema online.</p>
+                                <span class="btn btn-outline-primary mt-auto">Acessar Serviço</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <a href="service-detail.html?id=2" class="card service-card popular-card h-100 text-decoration-none">
+                            <div class="card-body d-flex flex-column align-items-center text-center p-4">
+                                <div class="service-icon icon-green mb-3" style="width: 80px; height: 80px; font-size: 2.5rem;">
+                                    <i class="fas fa-barcode"></i>
+                                </div>
+                                <h3 class="card-title large-text mb-3">Emissão de IPTU</h3>
+                                <p class="card-text flex-grow-1">Emita a segunda via do seu IPTU e mantenha seus pagamentos sempre em dia.</p>
+                                <span class="btn btn-outline-primary mt-auto">Acessar Serviço</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <a href="service-detail.html?id=3" class="card service-card popular-card h-100 text-decoration-none">
+                            <div class="card-body d-flex flex-column align-items-center text-center p-4">
+                                <div class="service-icon icon-orange mb-3" style="width: 80px; height: 80px; font-size: 2.5rem;">
+                                    <i class="fas fa-address-card"></i>
+                                </div>
+                                <h3 class="card-title large-text mb-3">Cadastro Único</h3>
+                                <p class="card-text flex-grow-1">Inscreva-se no Cadastro Único para programas sociais do governo federal.</p>
+                                <span class="btn btn-outline-primary mt-auto">Acessar Serviço</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <a href="service-explanation.html" class="card service-card popular-card h-100 text-decoration-none">
+                            <div class="card-body d-flex flex-column align-items-center text-center p-4">
+                                <div class="service-icon icon-purple mb-3" style="width: 80px; height: 80px; font-size: 2.5rem;">
+                                    <i class="fas fa-id-card"></i>
+                                </div>
+                                <h3 class="card-title large-text mb-3">Segunda Via do RG</h3>
+                                <p class="card-text flex-grow-1">Solicite sua segunda via do RG através do site oficial do Poupatempo.</p>
+                                <span class="btn btn-outline-primary mt-auto">Acessar Serviço</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <a href="services.html" class="btn btn-warning btn-lg" style="min-height: 70px; font-size: 1.25rem; padding: 1rem 2rem;">
+                        <i class="fas fa-list me-2"></i>
+                        Ver Todos os Serviços Disponíveis
+                    </a>
+                </div>
+            </section>
+
+            <!-- Emergências -->
+            <div class="emergency-alert">
+                <div class="emergency-content">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4 class="large-text">Em caso de emergência</h4>
+                        <p class="large-text">Para emergências, ligue: <strong>193 (Bombeiros)</strong> | <strong>190 (Polícia)</strong> | <strong>192 (SAMU)</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Contatos -->
+    <section class="contacts-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="extra-large-text">Contatos Importantes</h2>
+                <p class="large-text">Telefones dos principais setores da prefeitura</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-6">
+                    <div class="card contact-card h-100">
+                        <div class="card-header text-center bg-primary text-white">
+                            <i class="fas fa-building fa-2x mb-2"></i>
+                            <h4 class="large-text">Secretarias</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="contact-list">
+                                <div class="contact-item d-flex justify-content-between align-items-center py-3 border-bottom">
+                                    <span class="large-text">Administração</span>
+                                    <span class="large-text fw-bold">(11) 3333-4401</span>
+                                </div>
+                                <div class="contact-item d-flex justify-content-between align-items-center py-3 border-bottom">
+                                    <span class="large-text">Saúde</span>
+                                    <span class="large-text fw-bold">(11) 3333-4402</span>
+                                </div>
+                                <div class="contact-item d-flex justify-content-between align-items-center py-3">
+                                    <span class="large-text">Educação</span>
+                                    <span class="large-text fw-bold">(11) 3333-4403</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card contact-card h-100">
+                        <div class="card-header text-center bg-danger text-white">
+                            <i class="fas fa-heart fa-2x mb-2"></i>
+                            <h4 class="large-text">Emergências</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="contact-list">
+                                <div class="contact-item d-flex justify-content-between align-items-center py-3 border-bottom">
+                                    <span class="large-text">Bombeiros</span>
+                                    <span class="large-text fw-bold text-danger">193</span>
+                                </div>
+                                <div class="contact-item d-flex justify-content-between align-items-center py-3 border-bottom">
+                                    <span class="large-text">Polícia Militar</span>
+                                    <span class="large-text fw-bold text-danger">190</span>
+                                </div>
+                                <div class="contact-item d-flex justify-content-between align-items-center py-3">
+                                    <span class="large-text">SAMU</span>
+                                    <span class="large-text fw-bold text-danger">192</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4 p-4 bg-light rounded">
+                <h5 class="large-text">Central de Atendimento</h5>
+                <p class="extra-large-text mb-2"><strong>(11) 3333-4444</strong></p>
+                <p class="large-text">Email: <strong>atendimento@prefeitura.gov.br</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h3 class="large-text">Prefeitura Municipal</h3>
+            <div class="footer-info">
+                <div class="footer-item">
+                    <h5>Endereço</h5>
+                    <p>Rua Principal, 123<br>Centro - CEP 00000-000</p>
+                </div>
+                <div class="footer-item">
+                    <h5>Atendimento</h5>
+                    <p>Segunda a Sexta: 8h às 17h<br>Telefone: (11) 3333-4444</p>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 Prefeitura Municipal. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script principal -->
+    <script type="module" src="../js/app.js"></script>
+</body>
+</html>

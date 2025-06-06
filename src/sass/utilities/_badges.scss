@@ -1,0 +1,31 @@
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  &.popular {
+    background: #d4edda;
+    color: #155724;
+  }
+}
+
+.emergency-number {
+  font-weight: bold;
+  color: #dc3545;
+  font-size: 1.1rem;
+}
+
+.main-contact {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+
+  strong {
+    color: #333;
+  }
+}

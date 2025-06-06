@@ -1,0 +1,75 @@
+
+// Classes Utilitárias e Helpers
+
+// ===== ESPAÇAMENTOS CUSTOMIZADOS =====
+.p-custom {
+  padding: 2rem;
+}
+
+.m-custom {
+  margin: 2rem;
+}
+
+// ===== DISPLAYS CUSTOMIZADOS =====
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// ===== BORDAS CUSTOMIZADAS =====
+.border-custom {
+  border: 2px solid $primary;
+  border-radius: $border-radius;
+}
+
+.border-dashed {
+  border: 2px dashed $secondary;
+}
+
+// ===== SOMBRAS CUSTOMIZADAS =====
+.shadow-custom {
+  box-shadow: $box-shadow;
+}
+
+.shadow-custom-lg {
+  box-shadow: $box-shadow-lg;
+}
+
+// ===== CORES DE FUNDO GRADIENTE =====
+.bg-gradient-blue {
+  background: linear-gradient(135deg, $primary, lighten($primary, 20%));
+}
+
+.bg-gradient-green {
+  background: linear-gradient(135deg, $success, lighten($success, 20%));
+}
+
+// ===== UTILITÁRIOS DE TEXTO =====
+.text-shadow {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.text-uppercase-spaced {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+// ===== RESPONSIVIDADE =====
+.mobile-only {
+  @include media-breakpoint-up(md) {
+    display: none !important;
+  }
+}
+
+.desktop-only {
+  @include media-breakpoint-down(sm) {
+    display: none !important;
+  }
+}

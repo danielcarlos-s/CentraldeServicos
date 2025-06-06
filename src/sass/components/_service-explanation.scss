@@ -1,0 +1,305 @@
+
+/* Estilos para página de explicação do serviço */
+.external-service-btn {
+  min-height: 120px;
+  padding: 2rem 3rem;
+  font-size: $font-size-xl;
+  font-weight: bold;
+  border-radius: $border-radius-lg;
+  background: linear-gradient(135deg, $success 0%, darken($success, 10%) 100%);
+  border: none;
+  color: white;
+  box-shadow: $box-shadow;
+  transition: $transition-base;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  
+  &:hover, &:focus {
+    transform: translateY(-5px);
+    box-shadow: $box-shadow-lg;
+    background: linear-gradient(135deg, darken($success, 5%) 0%, darken($success, 15%) 100%);
+    color: white;
+  }
+  
+  .btn-subtitle {
+    font-size: 1rem;
+    font-weight: normal;
+    opacity: 0.9;
+  }
+  
+  i {
+    font-size: 2rem;
+  }
+}
+
+.service-info-section {
+  max-width: 900px;
+  margin: 0 auto;
+  
+  .section-title {
+    font-size: $font-size-xxl;
+    color: $primary;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Estilos para accordions otimizados para totem */
+.accordion {
+  .accordion-item {
+    margin-bottom: 1rem;
+    border: 2px solid #e9ecef;
+    border-radius: $border-radius;
+    overflow: hidden;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  .accordion-header {
+    .accordion-button {
+      font-size: $font-size-lg;
+      font-weight: 600;
+      padding: 1.5rem 2rem;
+      background: $prefeitura-light-blue;
+      border: none;
+      color: $primary;
+      min-height: 80px;
+      
+      &:not(.collapsed) {
+        background: $primary;
+        color: white;
+        box-shadow: none;
+      }
+      
+      &:focus {
+        box-shadow: 0 0 0 0.25rem rgba($primary, 0.25);
+      }
+      
+      i {
+        font-size: 1.5rem;
+        width: 2rem;
+      }
+      
+      span {
+        flex-grow: 1;
+      }
+      
+      &::after {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+      }
+    }
+  }
+  
+  .accordion-body {
+    padding: 2rem;
+    font-size: $font-size-base;
+    background: white;
+  }
+}
+
+/* Listas de informações */
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+  li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    font-size: $font-size-base;
+    
+    &:not(:last-child) {
+      border-bottom: 1px solid #f8f9fa;
+    }
+    
+    i {
+      color: $success;
+      font-size: 1.25rem;
+      margin-top: 0.25rem;
+      flex-shrink: 0;
+    }
+  }
+}
+
+/* Informações de custo */
+.cost-info {
+  .cost-item {
+    background: #f8f9fa;
+    padding: 1rem 1.5rem;
+    border-radius: $border-radius;
+    margin-bottom: 1rem;
+    font-size: $font-size-base;
+    
+    strong {
+      color: $primary;
+    }
+  }
+  
+  .cost-note {
+    background: #e3f2fd;
+    border: 2px solid #bbdefb;
+    padding: 1rem 1.5rem;
+    border-radius: $border-radius;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+    i {
+      color: $info;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+  }
+}
+
+/* Informações de entrega */
+.delivery-info {
+  .delivery-option {
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: $border-radius;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+    
+    h5 {
+      color: $primary;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      
+      i {
+        font-size: 1.25rem;
+      }
+    }
+    
+    p {
+      margin-bottom: 0.5rem;
+      font-size: $font-size-base;
+    }
+    
+    small {
+      color: $warning;
+      font-weight: 600;
+    }
+  }
+}
+
+/* Lista de locais */
+.locations-list {
+  .location-item {
+    background: #f8f9fa;
+    border-left: 4px solid $primary;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0 $border-radius $border-radius 0;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+    
+    h6 {
+      color: $primary;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      font-size: $font-size-lg;
+    }
+    
+    p {
+      margin: 0;
+      line-height: 1.6;
+    }
+  }
+}
+
+/* FAQ */
+.faq-list {
+  .faq-item {
+    border-bottom: 2px solid #f8f9fa;
+    padding: 1.5rem 0;
+    
+    &:last-child {
+      border-bottom: none;
+    }
+    
+    strong {
+      color: $primary;
+      font-size: $font-size-lg;
+      display: block;
+      margin-bottom: 0.75rem;
+    }
+    
+    p {
+      margin: 0;
+      font-size: $font-size-base;
+      line-height: 1.6;
+    }
+  }
+}
+
+/* Contato de emergência */
+.emergency-contact {
+  background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+  border: 2px solid #f5c6cb;
+  border-radius: $border-radius-lg;
+  padding: 2rem;
+  text-align: center;
+  margin: 3rem 0 2rem 0;
+  
+  h4 {
+    color: #721c24;
+    font-size: $font-size-xl;
+    margin-bottom: 1rem;
+    
+    i {
+      margin-right: 0.75rem;
+      font-size: 1.5rem;
+    }
+  }
+  
+  p {
+    color: #721c24;
+    font-size: $font-size-lg;
+    margin: 0.5rem 0;
+    
+    strong {
+      font-size: $font-size-xl;
+      font-weight: bold;
+    }
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .external-service-btn {
+    padding: 1.5rem 2rem;
+    font-size: $font-size-lg;
+    
+    i {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .accordion .accordion-header .accordion-button {
+    padding: 1rem 1.5rem;
+    font-size: $font-size-base;
+    min-height: 70px;
+  }
+  
+  .accordion .accordion-body {
+    padding: 1.5rem;
+  }
+}

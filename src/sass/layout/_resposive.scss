@@ -1,0 +1,277 @@
+
+/* Responsive otimizado para totem vertical 1080x1920 */
+
+/* Layout base para totem */
+@media (min-width: 1080px) and (min-height: 1920px) {
+  .container {
+    max-width: 1040px;
+    padding: 0 2rem;
+  }
+  
+  .popular-services, 
+  .row.g-4 {
+    gap: 2rem !important;
+  }
+  
+  .service-card.popular-card {
+    min-height: 350px;
+  }
+}
+
+/* Tablets em orientação portrait */
+@media (max-width: 1079px) and (orientation: portrait) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .header-time {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .instruction-text {
+    .container {
+      padding: 1rem;
+    }
+    
+    .title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .service-card.popular-card {
+    min-height: 280px;
+  }
+  
+  .external-service-btn {
+    max-width: 500px;
+    padding: 1.5rem 2rem;
+    font-size: 1.25rem;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .header-info {
+    .header-icon {
+      width: 60px;
+      height: 60px;
+      font-size: 2rem;
+    }
+    
+    .header-text h1 {
+      font-size: 1.75rem;
+    }
+  }
+  
+  .header-time {
+    text-align: center;
+    
+    .time-display #current-time {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .instruction-text {
+    .title {
+      font-size: 1.25rem;
+    }
+    
+    .icon {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .section-header {
+    h2 {
+      font-size: 1.5rem;
+    }
+    
+    p {
+      font-size: 1rem;
+    }
+  }
+  
+  .service-card.popular-card {
+    min-height: 250px;
+    
+    .service-icon {
+      width: 60px !important;
+      height: 60px !important;
+      font-size: 2rem !important;
+    }
+    
+    .card-title {
+      font-size: 1.25rem;
+    }
+  }
+  
+  .service-list-item {
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+    
+    > .fas.fa-chevron-right {
+      display: none;
+    }
+    
+    .service-info h4 {
+      justify-content: center;
+    }
+  }
+  
+  .contact-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .detail-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .info-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .form-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  
+  .form-actions {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  /* Ajustes para página de explicação em mobile */
+  .external-service-btn {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    min-height: 100px;
+    
+    i {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .accordion .accordion-header .accordion-button {
+    padding: 1rem;
+    font-size: 1rem;
+    min-height: 60px;
+    
+    i {
+      font-size: 1.25rem;
+      width: 1.5rem;
+    }
+  }
+  
+  .accordion .accordion-body {
+    padding: 1rem;
+  }
+  
+  .emergency-contact {
+    padding: 1.5rem;
+    
+    h4 {
+      font-size: 1.25rem;
+    }
+    
+    p {
+      font-size: 1rem;
+      
+      strong {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+/* Landscape orientation adjustments */
+@media (orientation: landscape) and (max-height: 768px) {
+  .header-main {
+    padding: 1rem 0;
+  }
+  
+  .instruction-text {
+    margin: 1rem 0;
+    
+    .container {
+      padding: 0.75rem 1rem;
+    }
+  }
+  
+  .main-content {
+    padding: 1rem 0;
+  }
+  
+  .service-card.popular-card {
+    min-height: 200px;
+  }
+  
+  .contacts-section {
+    padding: 1.5rem 0;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .service-icon {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .btn {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Touch-specific improvements */
+@media (pointer: coarse) {
+  .btn, .card, .accordion-button {
+    min-height: 60px;
+  }
+  
+  .service-card {
+    padding: 0.5rem;
+  }
+  
+  .service-card .card-body {
+    padding: 1.5rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .header-main,
+  .instruction-text,
+  .footer {
+    display: none;
+  }
+  
+  .main-content {
+    padding: 0;
+  }
+  
+  .service-card {
+    border: 1px solid #000;
+    break-inside: avoid;
+  }
+}

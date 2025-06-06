@@ -1,0 +1,64 @@
+
+// Animações e Transições Customizadas
+
+// ===== KEYFRAMES =====
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+// ===== CLASSES DE ANIMAÇÃO =====
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.slide-in-left {
+  animation: slideInFromLeft 0.8s ease-out;
+}
+
+.pulse-hover:hover {
+  animation: pulse 0.6s ease-in-out;
+}
+
+// ===== TRANSIÇÕES SUAVES =====
+.smooth-transition {
+  transition: $transition-base;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: $box-shadow-lg;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
